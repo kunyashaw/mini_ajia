@@ -1,2 +1,11 @@
-<!--pages/settings/settings.wxml-->
-<text>pages/settings/settings.wxml</text>
+
+<block wx:for="{{cells}}" wx:for-item="cellsItem" wx:for-index="cellsIndex" wx:key="cells">
+        <view class="cells">
+            <block wx:for="{{cellsItem}}" wx:for-item="cellItem" wx:for-index="cellIndex" wx:key="cells">
+                <view class="cell {{cellItem.access ? 'cell-access' : ''}}" bindtap="{{cellItem.fn}}">
+                    <view class="cell-bd">{{cellItem.title}}</view>
+                    <view class="cell-ft">{{cellItem.text}}</view>
+                </view>
+            </block>
+        </view>
+    </block>

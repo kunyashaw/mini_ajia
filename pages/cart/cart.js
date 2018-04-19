@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    isLogin:false,
+    cartList:[]
   },
 
   /**
@@ -26,7 +27,29 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    //检查用户是否登录
+   var value = wx.getStorageSync('isLogin')
+   if(value == "true"){
+     this.setData({isLogin:true})
+     this.getCartList();
+   }else{
+    this.setData({isLogin:false})
+   }
+    //获取商品列表
+  },
+  getCartList:function(){
+    wx.request({
+      url: 'http://localhost/ajia_code/data/cart/list.php',
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: (res)=> {
+        console.log(res,res);
+        this.setData({
+          cartList:res.data.data
+        });
+      }
+    })
   },
 
   /**
@@ -62,5 +85,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  jumpToLogin:function(){
+    wx.navigateTo({
+      url: '../login/login'
+    })
   }
 })

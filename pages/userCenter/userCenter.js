@@ -62,5 +62,25 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  logout(){
+    wx.request({
+      url: 'http://localhost/ajia_code/data/user/logout.php',
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function(res) {
+          console.log(res.data);
+          wx.showToast({
+            title: '退出登录成功'
+          });
+          //记在缓存中
+          wx.setStorage({
+            key: 'isLogin',
+            data: 'false'
+          })
+          wx.switchTab({url:'../index/index'})
+      }
+    })
   }
 })

@@ -1,4 +1,5 @@
 // pages/login/login.js
+
 Page({
 
   /**
@@ -82,6 +83,7 @@ Page({
       header: {
         'Content-Type': 'application/json'
       },
+      header:{withCredentials:true},
       success: function(res) {
           console.log(res.data);
           if(res.data.code == 200){
@@ -89,6 +91,11 @@ Page({
               title: '登录成功',
             })
             wx.navigateBack();
+            //记在缓存中
+            wx.setStorage({
+              key: 'isLogin',
+              data: 'true'
+            })
           }
           else{
             wx.showModal({
@@ -100,4 +107,4 @@ Page({
       }
     })
   }
-})
+})  

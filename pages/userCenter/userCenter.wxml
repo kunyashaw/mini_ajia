@@ -1,2 +1,13 @@
 <!--pages/userCenter/userCenter.wxml-->
-<text>pages/userCenter/userCenter.wxml</text>
+
+<view style="text-align:center">
+    <image style="width:100px;height:100px;border-radius:50px" src="/resources/img/avatar.jpg"></image>
+
+    <view>
+        <text style="font-size:20px">张三</text>
+    </view>
+    
+
+    <button type="warn" bindtap="logout">退出登录</button>
+
+</view> 
