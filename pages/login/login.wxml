@@ -1,0 +1,18 @@
+<!-- pages/login/login.wxml -->
+<view style="text-align:center">
+    <image style="width:100px;height:100px;border-radius:50px" src="/resources/img/avatar.jpg"></image>
+</view>
+<view><text>{{'\n\n'}}</text></view>
+<view style="display:flex;flex-direction:row">
+    <label style="width:60px" for="uname">用户名</label>
+    <input id="uname" placeholder="请输入用户名"  focus="{{true}}" bindchange="changeUname"></input>
+</view>
+<view><text>{{'\n'}}</text></view>
+<view style="display:flex;flex-direction:row">
+    <label style="width:60px">密码</label>
+    <input  placeholder="请输入密码" bindchange="changeUpwd"></input>
+</view>
+<view>
+    <text>{{'\n\n'}}</text>
+</view>
+<button type="warn" bindtap="dologin" style="width:100%">登录</button>

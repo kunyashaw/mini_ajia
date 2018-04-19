@@ -1,0 +1,124 @@
+
+<View class="box-container">
+    <View class="input-zone-view">
+        <Text class="input-zone">{{text}}</Text>
+    </View>
+    <View class="row-view">
+        <View class="fuc-view">
+            <Text class="fuc-text">C</Text>
+        </View>
+        <View class="deviler-vertical"/>
+        
+        <View class="fuc-view">
+            <icon type="cancel" color="white" size="40" />
+        </View>
+
+        <View class="deviler-vertical"/>
+        <View class="fuc-view">
+            <Text class="fuc-text">%</Text>
+        </View>
+        <View class="deviler-vertical"/>
+        <View class="fuc-view">
+            <Text class="fuc-text">÷</Text>
+        </View>
+    </View>
+    <View class="deviler-horizontal"/>
+
+    <View class="row-view"> 
+        <View class="num-view">
+            <Text class="num-text">7</Text>
+        </View>
+        
+        <View class="deviler-vertical"/>
+
+        <View class="num-view">
+            <Text class="num-text">8</Text>
+        </View>
+        
+        <View class="deviler-vertical"/>
+        
+        <View class="num-view">
+            <Text class="num-text">9</Text>
+        </View>
+
+        <View class="deviler-vertical"/>
+
+        <View class="fuc-view">
+            <Text class="fuc-text">×</Text>
+        </View>
+    </View>
+    <View class="deviler-horizontal"/>
+
+    <View class="row-view">
+        <View class="num-view">
+            <Text class="num-text">4</Text>
+        </View>
+
+        <View class="deviler-vertical"/>
+
+        <View class="num-view">
+            <Text class="num-text">5</Text>
+        </View>
+        
+        <View class="deviler-vertical"/>
+
+        <View class="num-view">
+            <Text class="num-text">6</Text>
+        </View>
+
+        <View class="deviler-vertical"/>
+
+        <View class="fuc-view">
+            <Text class="fuc-text">-</Text>
+        </View>
+    </View>
+
+    <View class="deviler-horizontal"/>
+    
+    <View class="row-view">
+        <View class="num-view">
+            <Text class="num-text">1</Text>
+        </View>
+
+        <View class="deviler-vertical"/>
+
+        <View class="num-view">
+            <Text class="num-text">2</Text>
+        </View>
+
+        <View class="deviler-vertical"/>
+        
+        <View class="num-view">
+            <Text class="num-text">3</Text>
+        </View>
+    
+        <View class="deviler-vertical"/>
+
+        <View class="fuc-view">
+            <Text class="fuc-text">+</Text>
+        </View>
+    </View>
+    
+    <View class="deviler-horizontal"/>
+    
+    <View class="row-view">
+        <View class="num-view">
+            <Text class="num-text">.</Text>
+        </View>
+
+        <View class="deviler-vertical"/>
+        
+        <View class="num-view">
+            <Text class="num-text">0</Text>
+        </View>
+        
+        <View class="deviler-vertical"/>
+
+        <View class="num-view">
+            <Text class="num-text">=</Text>
+        </View>
+        <View class="fuc-view">
+            <Text class="fuc-text"></Text>
+        </View>
+    </View>
+</View>

@@ -1,0 +1,27 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="true" autoplay="true">
+  <swiper-item style="width:200px;height:200px" wx:key="{{index}}" wx:for="{{recommendedItems}}">
+    <image mode="aspectFit" style="height:150px" src="/resources/{{item.pic}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 横向滚动 -->
+<view>新货上市</view>
+<scroll-view scroll-x="true" style=" white-space: nowrap;display:flex">
+  <view style="width: 200px; height: 200px; display: inline-block;" wx:for="{{newArrivalItems}}">
+    <image style="width:180px;margin-top:50px;height:100px;justify-content: center" mode="aspectFit" src="/resources/{{item.pic}}"></image>
+  </view>
+</scroll-view>
+<!-- 缩略图列表 -->
+<view>推荐商品</view>
+<block wx:for="{{recommendedItems}}" wx:key="index">
+  <view class="cells">
+    
+      <view class="cell cell-access" id="{{index}}" bindtap="jump">
+        <view class="cell-bd">
+          <image style="width:60px;height:60px" src="/resources/{{item.pic}}"></image>
+        </view>
+        <view class="cell-ft">{{item.title}}</view>
+      </view>
+    
+  </view>
+</block>

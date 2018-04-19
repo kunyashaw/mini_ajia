@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cart/cart",
+    "pages/userCenter/userCenter",
+    "pages/settings/settings",
+    "pages/test/test",
+    "pages/detail/detail",
+    "pages/login/login"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./resources/img/tabs/home_up.png",
+        "selectedIconPath": "./resources/img/tabs/home_down.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./resources/img/tabs/shop_car.png",
+        "selectedIconPath": "./resources/img/tabs/shop_car1.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "个人中心",
+        "iconPath": "./resources/img/tabs/usercenter_up.png",
+        "selectedIconPath": "./resources/img/tabs/usercenter_down.png"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "设置",
+        "iconPath": "./resources/img/tabs/settings.png",
+        "selectedIconPath": "./resources/img/tabs/settings.png"
+      }
+    ]
+  }
+}
